@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+:root {
+	--text-color: hsl(212, 30%, 21%);
+	--background-color: hsl(0, 0%, 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-color: hsl(0, 0%, 88%);
+		--background-color: hsl(200, 13%, 18%);
+	}
+}
+
+:root {
+	height: 100vh;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	transition: color 500ms, background-color 500ms;
+}
+
+body {
+	height: inherit;
+	font-family: monospace, Arial, sans-serif;
+	text-rendering: geometricprecision;
+	color-rendering: optimizequality;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
