@@ -22,10 +22,11 @@
 
 ### 开发🔧环境依赖（devDependencies）
 
-1. eslint: "^8.22.0"
-2. prettier: "^2.7.1"
-3. typescript: "^4.9.3"
-4. ...
+1. ...
+2. eslint: "^8.22.0"
+3. prettier: "^2.7.1"
+4. typescript: "^4.9.3"
+5. less: "^4.1.3"
 
 ## 推荐的 IDE
 
