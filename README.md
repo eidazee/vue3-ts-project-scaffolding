@@ -1,6 +1,6 @@
 # Vue3 + Ts 项目的脚手架
 
-## 脚手架🐾搭建前言
+## 脚手架 🐾 搭建前言
 
 这个模板使用 [create-vite](https://cn.vitejs.dev/guide/#scaffolding-your-first-vite-project) 进行自定义搭建，✅ ：
 
@@ -14,19 +14,21 @@
 
 ## 项目依赖纵览
 
-### 生产⚙️环境依赖（dependencies）
+### 生产 ⚙️ 环境依赖（dependencies）
 
 1. vue: "^3.2.45"
 2. vue-router: "^4.1.6"
 3. pinia: "^2.0.26"
 
-### 开发🔧环境依赖（devDependencies）
+### 开发 🔧 环境依赖（devDependencies）
 
 1. ...
 2. eslint: "^8.22.0"
 3. prettier: "^2.7.1"
 4. typescript: "^4.9.3"
 5. less: "^4.1.3"
+6. husky: "^8.0.0"
+7. lint-staged: "^13.1.0"
 
 ## 推荐的 IDE
 
@@ -48,42 +50,42 @@ Vetur） + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/
 以发挥更高的性能。您可以通过以下步骤启用它：
 
 1. 禁用内置 TypeScript 扩展
-    1) 从 VSCode 的命令行运行 `Extensions: Show Built-in Extensions`
-    2) 找到 `TypeScript and JavaScript Language Features`，右键单击并选择 `Disable (Workspace)`
+   1. 从 VSCode 的命令行运行 `Extensions: Show Built-in Extensions`
+   2. 找到 `TypeScript and JavaScript Language Features`，右键单击并选择 `Disable (Workspace)`
 2. 从 VSCode 的命令行运行 `Developer: Reload Window` 以重新加载 VSCode 窗口
 
-### WebStorm（推荐👍）
+### WebStorm（推荐 👍）
 
 WebStorm 为 Vue
 的单文件组件提供了很好的内置支持，参见 [Vue 官方文档 - IDE 支持](https://cn.vuejs.org/guide/scaling-up/tooling.html#ide-support) + [WebStorm 官方文档 - Vue.js](https://www.jetbrains.com/help/webstorm/vue-js.html)。
 
-⚠️ 暂不推荐使用 yarn 3 包管理器，与 IDE 会有兼容性问题🥴，例如在 WebStorm 中 eslint、prettier 等会难以配置相关依赖等👀问题。
+⚠️ 暂不推荐使用 yarn 3 包管理器，与 IDE 会有兼容性问题 🥴，例如在 WebStorm 中 eslint、prettier 等会难以配置相关依赖等 👀 问题。
 
 简单配置 WebStorm 以获得更好的开发体验：
 
 1. 语言和框架 > Javascript > 代码质量工具 > ESLint
-    1) 自动 ESLint 配置
-    2) 更改检测配置文件集为 `{**/*,*}.{js,ts,jsx,tsx,cjs,mjs,cts,mts,html,vue}`
-    3) ✅ 保存时运行 eslint --fix(U)
-    4) ✅ 保存时(S)
+   1. 自动 ESLint 配置
+   2. 更改检测配置文件集为 `{**/*,*}.{js,ts,jsx,tsx,cjs,mjs,cts,mts,html,vue}`
+   3. ✅ 保存时运行 eslint --fix(U)
+   4. ✅ 保存时(S)
 2. 语言和框架 > Javascript > Prettier
-    1) 配置 Prettier 包为项目依赖下的 prettier 包
-    2) 更改检测配置文件集为 `{**/*,*}.{js,ts,jsx,tsx,cjs,mjs,cts,mts,html,vue}`
-    3) ✅ 执行 “重新格式化代码“ 操作时(R)
-    4) ✅ 保存时(S)
+   1. 配置 Prettier 包为项目依赖下的 prettier 包
+   2. 更改检测配置文件集为 `{**/*,*}.{js,ts,jsx,tsx,cjs,mjs,cts,mts,html,vue}`
+   3. ✅ 执行 “重新格式化代码“ 操作时(R)
+   4. ✅ 保存时(S)
 3. 语言和框架 > TypeScript
-    1) 配置 TypeScript 包为项目依赖下的 typescript 包
-    2) ✅ TypeScript 语言服务
-    3) ✅ 显示项目错误
+   1. 配置 TypeScript 包为项目依赖下的 typescript 包
+   2. ✅ TypeScript 语言服务
+   3. ✅ 显示项目错误
 4. 语言和框架 > TypeScript > TSLint
-    1) 自动 TSLint 配置 (A)
+   1. 自动 TSLint 配置 (A)
 5. 工具 > 保存时的操作
-    1) ✅ 重新格式化代码
-    2) ✅ 优化 import
-    3) ✅ 重新排列代码
-    4) ✅ 运行代码清理
-    5) ✅ 运行 eslint --fix
-    6) ✅ 运行 Prettier
+   1. ✅ 重新格式化代码
+   2. ✅ 优化 import
+   3. ✅ 重新排列代码
+   4. ✅ 运行代码清理
+   5. ✅ 运行 eslint --fix
+   6. ✅ 运行 Prettier
 
 ## 自定义配置
 
