@@ -1,0 +1,17 @@
+root = true
+# 所有文件格式风格统一
+[*]
+# Unix风格的换行符
+end_of_line = lf
+# 缩进格式：space/tab
+indent_style = tab
+# 制表符的列数（缩进格式指定为tab时生效，默认为indent_size）
+tab_width = 2
+# 每个缩进级别的列数和软选项卡的宽度
+indent_size = 2
+# 统一字符集
+charset = utf-8
+# 确保文件在保存时以换行符结尾
+insert_final_newline = true
+# 删除换行符之前的任何空白字符
+trim_trailing_whitespace = true

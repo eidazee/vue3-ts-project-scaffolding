@@ -1,6 +1,8 @@
-# Vue3 + Ts 项目的脚手架
+# Vue3 + Ts 项目的脚手架 🐾
 
-## 脚手架 🐾 搭建前言
+## 脚手架概要
+
+### 搭建基础
 
 这个模板使用 [create-vite](https://cn.vitejs.dev/guide/#scaffolding-your-first-vite-project) 进行自定义搭建，✅ ：
 
@@ -10,7 +12,23 @@
 4. Add ESLint for code quality
 5. Add Prettier for code formatting
 
-应该有助于让你开始在 Vite 中使用 Vue 3 进行开发。
+### 编程风格说明 ⚠️
+
+该 ESLint 规则集（.editorconfig - rules）是基于 "eslint:recommended"
+进行的自定义调配，参见 [ESLint - 规则](https://zh-hans.eslint.org/docs/latest/rules/)。
+
+IDE 编程风格：（若 IDE 支持会自动完成 🫣，参见 [EditorConfig](https://editorconfig.org/)）
+
+1. 使用 unix 风格的换行符
+2. 使用 tab 制表符进行缩进，且制表符大小为 2
+3. 统一字符集为 utf-8
+4. 保存文件时以换行符结尾
+5. 删除空行的任何空白字符
+
+该 TypeScript 风格（tsconfig.json -
+compilerOptions）是基于 [TSConfig Reference](https://www.typescriptlang.org/zh/tsconfig) 进行的自定义选择搭配。
+
+以上这些应该有助于让你开始在 Vite 中使用 Vue 3 进行开发 😊。
 
 ## 项目依赖纵览
 
@@ -34,7 +52,7 @@
 
 ### VSCode
 
-⚠️ 暂未尝食 😋
+⚠️ 暂未尝食 😋，需自行吃 🍬
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) （并禁用
 Vetur） + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)。
@@ -112,9 +130,6 @@ npm run build
 ```
 
 ### [ESLint](https://eslint.org/) 静态分析
-
-⚠️ 该 ESLint 规则基于 "eslint:recommended"
-进行自定义配置，参见 [ESLint - 规则](https://zh-hans.eslint.org/docs/latest/rules/)
 
 ```sh
 npm run lint

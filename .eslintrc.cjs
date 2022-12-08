@@ -1096,7 +1096,10 @@ module.exports = {
 		/*
 		 * https://zh-hans.eslint.org/docs/latest/rules/indent
 		 * 配置缩进
-		 * @off 未知冲突
+		 * @off
+		 * 指定为tab：与.vue的<script>标签缩进有冲突
+		 * 参见：https://github.com/vuejs/eslint-plugin-vue/blob/master/docs/rules/script-indent.md
+		 * 指定为space时与其它规则冲突等
 		 */
 		indent: "off",
 

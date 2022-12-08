@@ -43,7 +43,7 @@
 			"prettier --write"
 		],
 		"*.{js,ts,jsx,tsx,cjs,mjs,cts,mts,vue}": [
-			"npm run type-check",
+			"vue-tsc --noEmit --allowJs",
 			"npm run lint",
 			"prettier --write"
 		]
