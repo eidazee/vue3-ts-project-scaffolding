@@ -42,11 +42,22 @@ compilerOptions）是基于 [TSConfig Reference](https://www.typescriptlang.org/
 
 1. ...
 2. eslint: "^8.22.0"
-3. prettier: "^2.7.1"
+3. prettier: "^2.8.1"
 4. typescript: "^4.9.3"
 5. less: "^4.1.3"
 6. husky: "^8.0.0"
 7. lint-staged: "^13.1.0"
+8. postcss-less: "^6.0.0"
+9. postcss-preset-env: "^7.8.3"
+10. stylelint: "^14.16.0"
+11. stylelint-config-prettier: "^9.0.4"
+12. stylelint-config-property-sort-order-smacss: "^9.0.0"
+13. stylelint-config-recommended-less: "^1.0.4"
+14. stylelint-config-standard: "^29.0.0"
+15. stylelint-config-standard-vue: "^1.0.0"
+16. stylelint-less: "^1.0.6"
+17. stylelint-order: "^5.0.0"
+18. stylelint-prettier: "^2.0.0"
 
 ## 推荐的 IDE
 
@@ -83,12 +94,12 @@ WebStorm 为 Vue
 
 1. 语言和框架 > Javascript > 代码质量工具 > ESLint
    1. 自动 ESLint 配置
-   2. 更改检测配置文件集为 `{**/*,*}.{js,ts,jsx,tsx,cjs,mjs,cts,mts,html,vue}`
+   2. 更改检测配置文件集为 `{**/*,*}.{js,ts,jsx,tsx,cjs,mjs,cts,mts,vue}`
    3. ✅ 保存时运行 eslint --fix(U)
    4. ✅ 保存时(S)
 2. 语言和框架 > Javascript > Prettier
    1. 配置 Prettier 包为项目依赖下的 prettier 包
-   2. 更改检测配置文件集为 `{**/*,*}.{js,ts,jsx,tsx,cjs,mjs,cts,mts,html,vue}`
+   2. 更改检测配置文件集为 `{**/*,*}.{js,ts,jsx,tsx,cjs,mjs,cts,mts,vue}`
    3. ✅ 执行 “重新格式化代码“ 操作时(R)
    4. ✅ 保存时(S)
 3. 语言和框架 > TypeScript
@@ -104,6 +115,9 @@ WebStorm 为 Vue
    4. ✅ 运行代码清理
    5. ✅ 运行 eslint --fix
    6. ✅ 运行 Prettier
+6. 语言和框架 > 样式表 > Stylelint
+   1. 配置 Stylelint 包为项目依赖下的 stylelint 包
+   2. 更改检测配置文件集为 `{**/*,*}.{css,less,scss,vue}`
 
 ## 自定义配置
 
