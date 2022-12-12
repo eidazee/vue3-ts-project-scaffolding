@@ -36,7 +36,7 @@ compilerOptions）是基于 [TSConfig Reference](https://www.typescriptlang.org/
 
 1. vue: "^3.2.45"
 2. vue-router: "^4.1.6"
-3. pinia: "^2.0.26"
+3. pinia: "^2.0.28"
 
 ### 开发 🔧 环境依赖（devDependencies）
 

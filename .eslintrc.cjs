@@ -14,6 +14,14 @@ module.exports = {
 	},
 	env: { browser: true, node: true, es2022: true },
 	rules: {
+		// 覆写 "eslint:recommended" 规则：
+
+		/*
+		 * https://zh-hans.eslint.org/docs/latest/rules/no-constant-condition
+		 * @overwrite 禁止将常量作为分支条件判断中的测试表达式，但允许在循环中使用常量表达式
+		 */
+		"no-constant-condition": ["error", { checkLoops: false }],
+
 		// 可能出现的问题 - 这些规则与代码中可能出现的逻辑错误有关
 
 		/*
@@ -100,14 +108,6 @@ module.exports = {
 		 * 在分配可能已过时值的情况下报告对变量或属性的分配
 		 */
 		"require-atomic-updates": ["error", { allowProperties: false }],
-
-		// 覆写 "eslint:recommended" 规则：
-
-		/*
-		 * https://zh-hans.eslint.org/docs/latest/rules/no-constant-condition
-		 * @overwrite 禁止将常量作为分支条件判断中的测试表达式，但允许在循环中使用常量表达式
-		 */
-		"no-constant-condition": ["error", { checkLoops: false }],
 
 		// 建议 - 这些规则提出了替代的做事方式
 
@@ -912,11 +912,11 @@ module.exports = {
 		 * @off
 		 */
 		"sort-imports": [
-			"error",
+			"warn",
 			{
 				ignoreCase: false,
 				ignoreDeclarationSort: false,
-				ignoreMemberSort: false,
+				ignoreMemberSort: true,
 				memberSyntaxSortOrder: ["none", "all", "single", "multiple"],
 				allowSeparatedGroups: true,
 			},
@@ -1252,7 +1252,7 @@ module.exports = {
 		 * https://zh-hans.eslint.org/docs/latest/rules/object-curly-spacing
 		 * 对象字面量只有一行时，大括号内的首尾必须有空格
 		 */
-		"object-curly-spacing": ["error", "always", { arraysInObjects: true, objectsInObjects: true }],
+		"object-curly-spacing": ["warn", "always"],
 
 		/*
 		 * https://zh-hans.eslint.org/docs/latest/rules/object-property-newline

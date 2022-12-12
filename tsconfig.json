@@ -2,58 +2,30 @@
 	"extends": "@vue/tsconfig/tsconfig.web.json",
 	"include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
 	"compilerOptions": {
-		// 设置解析非绝对路径模块名时的基准目录
 		"baseUrl": ".",
-		// 启用所有严格模式的全局选项
 		"strict": true,
-		// 允许JavaScript文件被引入您的工程，而不要仅仅允许.ts和.tsx文件
 		"allowJs": true,
-		// 与 allowJs配合使用，JavaScript文件中会报告错误
 		"checkJs": true,
-		// 允许访问UMD导出的的模块文件中的形式全局变量（特定的库（如jQuery或Lodash）总是可用的，当该设置为false时无法通过导入来使用他们）
 		"allowUmdGlobalAccess": true,
-		// 设置程序的模块系统（改变module可能会影响moduleResolution）
 		"module": "ESNext",
-		// 指定模块解析策略
 		"moduleResolution": "Node",
-		// 启用该选项允许导入JSON，并验证该JSON文件中的类型
 		"resolveJsonModule": true,
-		// 文件名中的强制一致外壳
 		"forceConsistentCasingInFileNames": true,
-		// ES 模块互操作性（参见 https://www.typescriptlang.org/zh/tsconfig#esModuleInterop）
 		"esModuleInterop": true,
-		// 确保每个文件都可以安全地转移，而无需依赖其他导入（访问使用 declare 关键字声明枚举的时候不报错）
 		"isolatedModules": true,
-		// 编译目标
 		"target": "ESNext",
-		// 不对 JSX 进行改变并生成 .jsx 文件
 		"jsx": "preserve",
-		// 启用生成源地图文件
 		"sourceMap": true,
-		// 跳过声明文件的类型检查
 		"skipLibCheck": true,
-		// 移除注释
 		"removeComments": true,
-		// 不允许未使用的局部变量
-		"noUnusedLocals": true,
-		// 不允许有隐式的返回值
+		"noUnusedLocals": false,
 		"noImplicitReturns": true,
-		// 不允许未使用的参数
 		"noUnusedParameters": true,
-		// 确保重写的函数包含关键字override以确保子类永远不会不同步
 		"noImplicitOverride": true,
-		// 向类型中的任何未声明字段添加undefined
 		"noUncheckedIndexedAccess": true,
-		// 使TypeScript真正执行作为可选属性提供的定义（不允许隐式的undefined）
 		"exactOptionalPropertyTypes": true,
-		// 确保使用索引语法访问未定义的字段而不是使用点语法
 		"noPropertyAccessFromIndexSignature": true,
-		// 参见 https://www.typescriptlang.org/zh/tsconfig#types
-		"types": [
-			// 引入 Vite 提供的一些内置的对象（解决 TS2339: Property 'env' does not exist on type 'ImportMeta'.）
-			"vite/client"
-		],
-		// paths可以允许你声明 TypeScript 应该如何解析你的require/import
+		"types": ["vite/client"],
 		"paths": {
 			"@/*": ["./src/*"]
 		}
